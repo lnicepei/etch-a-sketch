@@ -19,21 +19,18 @@ function hotLoad(){
             
         }
         
-        document.getElementById('resetbutton').addEventListener('click', reseter(), false);
+        document.getElementById('resetbutton').addEventListener('click', reseter, false);
     }else{
         alert("enter a number less than a 100");
         // document.location.reload();
     }
 }
-function reseter(){
-    for(let i = 0; i < n; i++){
-        for(let k = 0; k < n; k++){
-            
-            // document.getElementById('container').removeChild('square');
-            
-        }
-    }
+function reseter(){            
+    const divs = document.querySelectorAll(".square.hover");
+    divs.forEach(div => { divs.forEach(d => d.classList.remove("hover"));
+    d.classList.add("hoverclear");
+});         
 }
 function colorSelected (element) {
-    document.body.style.background = element.value
+    document.getElementsByClassName('container square hover').style.backgroundColor = element.value
 }

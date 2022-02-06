@@ -3,15 +3,15 @@ etch();
 function etch(){
     do{
         n = parseInt(prompt("enter number of row & columns(32 or less)"));
-        if(n > 32){alert("enter number 32 or less");}
-    }while(n > 32)
+        if(n > 1000){alert("enter number 32 or less");}
+    }while(n > 1000)
     
-    document.getElementById('container').style.width = n * 25 + 'px';
-    document.getElementById('container').style.height = n * 25 + 'px';
     for(let i = 0; i < n; i++){
         for(let k = 0; k < n; k++){
             const div = document.createElement('div');
             div.setAttribute("class", "square");
+            div.style.width = 75 / n + 'vh';
+            div.style.height = 75 / n + 'vh';
             document.getElementById('container').appendChild(div);
             div.addEventListener("mouseover", function adder() {
                 div.classList.toggle('hover');
@@ -31,6 +31,8 @@ function reseter(){
             for(let k = 0; k < n; k++){
                 const div = document.createElement('div');
                 div.setAttribute("class", "square");
+                div.style.width = 75 / n + 'vh';
+                div.style.height = 75 / n + 'vh';
                 document.getElementById('container').appendChild(div);
                 div.addEventListener("mouseover", function adder() {
                     div.classList.toggle('hover');
@@ -48,12 +50,14 @@ function resizer(){
         n = parseInt(prompt("enter number of row & columns(32 or less)"));
         if(n > 32){alert("enter number 32 or less");}
     }while(n > 32)
-    document.getElementById('container').style.width = n * 25 + 'px';
-    document.getElementById('container').style.height = n * 25 + 'px';
+    // document.getElementById('container').style.width = n * 25 + 'px';
+    // document.getElementById('container').style.height = n * 25 + 'px';
     for(let i = 0; i < n; i++){
             for(let k = 0; k < n; k++){
                 const div = document.createElement('div');
                 div.setAttribute("class", "square");
+                div.style.width = 75 / n + 'vh';
+                div.style.height = 75 / n + 'vh';
                 document.getElementById('container').appendChild(div);
                 div.addEventListener("mouseover", function adder() {
                     div.classList.toggle('hover');

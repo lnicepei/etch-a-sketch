@@ -8,14 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container"></div>
-    <div class="buttons">
-        <button id="resizer">RESET SIZE</button>
-        <button id="resetbutton">RESET</button>
+    <div id="html1">
+        <div id="header">Etch-A-Sketch</div>
+        <div id="container"></div>
+        <div id="buttons">
+            <button id="resizer">RESET SIZE</button>
+            <button id="resetbutton">RESET</button>
+        </div>
+        <div class="pickcont">
+            Pick a color <input onchange="colorSelected(this)" type="color" value="#ff0000">
+          </div>
+
     </div>
-    <div class="pickcont">
-        Pick a color <input onchange="colorSelected(this)" type="color">
-      </div>
     <script src="script.js"></script>
 </body>
 </html>

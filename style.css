@@ -69,7 +69,7 @@ html{
   cursor: pointer;
   display: inline-flex;
   flex: 1 1 auto;
-  font-family: Inter,sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   justify-content: center;
   line-height: 1;

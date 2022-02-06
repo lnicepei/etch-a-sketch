@@ -3,7 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; 
+    margin: 20px; 
+    margin-top: 50px;
     font-size: 30px;
 }
 html{
@@ -16,7 +17,6 @@ html{
 }
 #buttons{
     gap: 10px;
-
 }
 #html1{
     height: 95vh;
@@ -37,11 +37,13 @@ html{
 }
 #container{
     box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-size: 0;
     left: 0;
     height: 75vh;
     width: 75vh;
+    /* border: 10px solid black; */
+    /* border-radius: 20px; */
 }
 .hover{
     transition: 0.5s linear;
@@ -54,7 +56,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    margin: 20px;
 }
 
 

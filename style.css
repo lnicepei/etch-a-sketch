@@ -9,8 +9,12 @@ html{
     display: inline-block;
     height: 25px;
     width: 25px;
-    border: 1px solid red;
-    border: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: thin solid black;
+    /* border-style: ; */
+    /* border: 0; */
     background-color: white;
 }
 #container{
